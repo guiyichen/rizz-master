@@ -1,8 +1,8 @@
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;height:100%}
-body{font-family:-apple-system,system-ui,Segoe UI,Roboto,Helvetica,Arial;line-height:1.6;color:#1f2328;background:#ffffff;display:flex;align-items:center;justify-content:center;min-height:100vh}
+body{font-family:-apple-system,system-ui,Segoe UI,Roboto,Helvetica,Arial;line-height:1.6;color:#1f2328;background:#ffffff;display:flex;flex-direction:column;min-height:100vh}
 .container{max-width:720px;margin:0 auto;padding:0 16px;width:100%}
-.section{padding:48px 0;display:flex;flex-direction:column;align-items:center;text-align:center}
+.section{padding:48px 0;display:flex;flex-direction:column;align-items:center;text-align:center;flex:1;justify-content:center}
 .section h2{margin:0 0 16px;font-size:20px;color:#111}
 
 .chat{display:flex;flex-direction:column;gap:12px;width:100%;max-width:500px}
@@ -16,6 +16,12 @@ body{font-family:-apple-system,system-ui,Segoe UI,Roboto,Helvetica,Arial;line-he
 .button-primary{background:#111;color:#fff;border-color:#111}
 .tip{color:#6b7280;font-size:12px;margin:0}
 
+/* Footer */
+.site-footer{padding:24px 0;border-top:1px solid #e5e7eb;background:#f8fafc;margin-top:auto;flex-shrink:0}
+.site-footer .container{display:flex;align-items:center;justify-content:center}
+.site-footer p{color:#6b7280;font-size:14px;margin:0;text-align:center}
+
 @media (max-width:640px){
   .container{max-width:100%}
+  .site-footer .container{flex-direction:column;align-items:center;text-align:center}
 }

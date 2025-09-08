@@ -49,4 +49,10 @@ if (sendBtn && input) {
   input.addEventListener('keydown', (e)=>{ if(e.key==='Enter'){ handleSend(); }});
 }
 
+// Set current year in footer
+const yearEl = document.querySelector('#year');
+if (yearEl) {
+  yearEl.textContent = new Date().getFullYear();
+}
+
 
